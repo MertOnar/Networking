@@ -1,9 +1,5 @@
-package database;
+package connectt;
 
-public class ourKonnektorDriver {
-	public static void main(String[] argss){
-		//TODO Auto-generated method stub
-		ourKonnektor o=new ourKonnektor();
-	}
-
+public class ourkonnectordriver {
+	ourKonnect o = new ourKonnect();
 }
