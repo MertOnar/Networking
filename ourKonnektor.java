@@ -1,36 +1,30 @@
-package database;
+package connectt;
 
 import java.beans.Statement;
-import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class ourKonnektor {
+import com.sun.corba.se.pept.transport.Connection;
 
-	ArrayList<datamodel> dataContainer;
-	Connection connect =null;
-	private PreparedStatement preparedStatement =null;
+public class ourKonnect {
+	ArrayList<datamodell1> dataContainer;
+	private Connection connect = null;
 	private Statement statement = null;
-	private ResultSet resultSet= null;
+	private PreparedStatement preparedStatement = null;
+	private ResultSet resultset = null;
 	
-	
-	public ourKonnektor(){
-		
-		dataContainer= new ArrayList<datamodel>();
-		
+	public ourKonnect(){
+		dataContainer = new ArrayList<datamodell1>();
 		try{
-			
-			Class.forName("con.mysql.jdbc.Driver");
-			connect = DriverManager
-					.getConnection("jdbc:mysql://localhost/startrek?"
-							+ "user-myblog&password=12345");
-		} catch (ClassNotFoundException | SQLException e){
-			//TODO Auto-generated catch block
+			Class.forName("com.mysql.jdbc.Driver");
+			connect = (Connection) DriverManager.getConnection("jdbc:mytsql://localhost/startrek?"+"user=myblog&password=123aa");
+		}
+		catch(ClassNotFoundException | SQLException e){
 			e.printStackTrace();
 		}
-		
 	}
-
+	
 }
