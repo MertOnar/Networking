@@ -1,9 +1,8 @@
-package database;
+package connectt;
 
-public class datamodel {
+public class datamodell1 {
 	int id;
 	String topic;
 	String content;
 	
-
 }
