@@ -1,8 +1,8 @@
-package connectt;
+package connectto;
 
-public class datamodell1 {
-	int id;
-	String topic;
-	String content;
-	
+public class datamodel {
+ int id;
+ String topic;
+ String content;
+ 
 }
