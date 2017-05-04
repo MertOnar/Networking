@@ -1,5 +1,6 @@
-package connectt;
+package connectto;
 
-public class ourkonnectordriver {
-	ourKonnect o = new ourKonnect();
+public class ourKonnektorDriver {
+
+	ourKonnektor o=new ourKonnektor();
 }
